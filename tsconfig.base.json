@@ -10,11 +10,18 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
+    "allowSyntheticDefaultImports": true,
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "types": ["node"],
+    "paths": {
+      "@dwainebest/markdown": ["libs/markdown/src/index.ts"],
+      "@dwainebest/shared/mdx-elements": [
+        "libs/shared/mdx-elements/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
